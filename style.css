@@ -213,7 +213,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40%;
+    height: 35%;
     padding: 25px;
     background-color: lavender;
 }
@@ -222,7 +222,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20%;
+    height: 25%;
     padding: 25px;
     background-color: greenyellow;
 }
