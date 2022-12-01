@@ -197,6 +197,7 @@ body {
     width: 100%;
     height: 10%;
     align-items: center;
+    margin-top: 5px;
 }
 
 .hello-anda {
@@ -247,7 +248,7 @@ body {
 
 .info-kendaraan {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 15px;
     width: 100%;
     height: 30%;
@@ -256,19 +257,38 @@ body {
     margin-bottom: 20px;
     margin-top: 30px;
     font-weight: bold;
+    align-items: center;
 }
 
-.info-kendaraan img {
-    margin-right: 20px;
+.jumlah-kendaraan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.kendaraan {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.kendaraan img {
+    margin-right: 10px;
 }
 
 .detail1 {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 140%;
     height: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .detail1 p {
@@ -281,8 +301,8 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .detail2 p {
