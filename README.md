@@ -1,4 +1,5 @@
 # Instalasi
+python -m venv <nama environment>
 pip install -r requirements.txt
 
 # SAMIT
