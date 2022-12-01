@@ -26,6 +26,10 @@ if __name__ == '__main__':
 def index():
     return render_template('index.html')
 
+@app.route('/samling')
+def samling():
+    return render_template('./pages/samling.html')
+
 
 # db=client["BAPENDA"]
 # db=client["Samsat Keliling"]
