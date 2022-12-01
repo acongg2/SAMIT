@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
 @app.route('/')
 def index():
-    return render_template('samling.html')
+    return render_template('index.html')
 
 
 # db=client["BAPENDA"]
