@@ -1,21 +1,60 @@
-from flask import Flask, jsonify, request
-import mysql.connector
+# from typing import Optional
+# from fastapi import FastAPI, Depends, HTTPException, status, Response, Request, status
+# from fastapi.responses import JSONResponse
+# from pydantic import BaseModel
+# from fastapi.security import OAuth2PasswordRequestForm
+# import mysql.connector
+# from pymongo import MongoClient
 
-# Intitialise the app
+# # Intitialise the app
+# app = FastAPI()
+
+# mongodb_URI = 'mongodb+srv://admin:admin@lasti.gi8e0eg.mongodb.net/?retryWrites=true&w=majority'
+# port = 3306
+# client = MongoClient(mongodb_URI, port)
+# db = client["User"]
+
+# @app.get("/api/getSamlingInfo/loc=Bandung")
+# async def getSamlingInfo():
+#     mycol = db["BAPENDA"]
+#     myquery = { "location": "Bandung" }
+#     mydoc = mycol.find(myquery)
+#     for x in mydoc:
+#         return x
+
+
+from flask import Flask, jsonify, render_template, request, Response, redirect, url_for
+from flask_pymongo import PyMongo
+import bson
+
 app = Flask(__name__)
 
-# Connect to the database
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    database="samsat_keliling"
-    )
+app.config["MONGO_URI"] = "mongodb://localhost:27017/Lasti"
+mongo = PyMongo(app)
 
-# Create a cursor  
-cursor = db.cursor()
+@app.route("/")
+def homepage():
+    return render_template("homepage.html")
 
-# Endpoint Get
-@app.get("/api/getSamlingInfo/loc=Bandung")
+@app.route("/api/getSamlingInfo/loc=Bandung")
 def getSamlingInfo():
-    cursor.execute("SELECT * FROM data_samling WHERE kota_kabupaten like '%Bandung%'")
-    return jsonify(cursor.fetchall())
+    mycol = mongo.db.BAPENDA
+    myquery = { "location": "Bandung" }
+    mydoc = mycol.find(myquery
+    for x in mydoc:
+        return x
+
+
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
+
+# if __name__ == '__main__':
+#     app.run(debug=False)
+
+# db=client["BAPENDA"]
+# db=client["Samsat Keliling"]
+
+# if request.method == 'READ':
+#         data = list(collection.find())
+#         return Response(jsonify(data))
