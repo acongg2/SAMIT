@@ -214,3 +214,33 @@ body {
 .table-jadwal-container {
     padding: 1vw;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.5)
+}
+
+th,
+td {
+    padding: 8px 16px;
+}
+
+th {
+    background: rgb(22, 150, 229);
+}
+
+#table tr td{
+    text-align: center;
+    height : 60px;
+}
+
+thead tr th {
+    width: 160px;
+}
+
+.label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+}

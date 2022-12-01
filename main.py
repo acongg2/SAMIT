@@ -9,7 +9,7 @@ db = client["BAPENDA"]
 def parse_json(data):
     return json_util.dumps(data)
 
-@app.route('/Samling', methods=["GET"])
+@app.route('/api/Samling', methods=["GET"])
 def get_data():
     collection = client["BAPENDA"]["Samsat_Keliling"]
     datas = []
@@ -29,11 +29,3 @@ def index():
 @app.route('/samling')
 def samling():
     return render_template('./pages/samling.html')
-
-
-# db=client["BAPENDA"]
-# db=client["Samsat Keliling"]
-
-# if request.method == 'READ':
-#         data = list(collection.find())
-#         return Response(jsonify(data))
