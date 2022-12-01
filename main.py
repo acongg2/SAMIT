@@ -1,5 +1,4 @@
 from flask import Flask, jsonify
-from flask_pymongo import PyMongo
 from pymongo import MongoClient
 import bson.json_util as json_util
 
@@ -17,7 +16,6 @@ def get_data():
     for data in collection.find({}):
         datas.append(data)
     return parse_json(datas)
-    client.close()
 
 
 if __name__ == '__main__':
