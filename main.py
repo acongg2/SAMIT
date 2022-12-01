@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template
 from pymongo import MongoClient
 import bson.json_util as json_util
 
@@ -20,6 +20,11 @@ def get_data():
 
 if __name__ == '__main__':
     app.run()
+
+
+@app.route('/')
+def index():
+    return render_template('samling.html')
 
 
 # db=client["BAPENDA"]
