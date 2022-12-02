@@ -1,27 +1,44 @@
 
-function getSamling() {
-    axios.get('/api/samling')
-        .then(function (response) {
-            console.log(response.data)
-        })
-    
-    .catch(error => {
-        console.log(error)
+let temp = ''
+
+function getvalue(i){
+    temp = i
+    localStorage.setItem('kota', temp)
+}
+
+let search = false;
+
+console.log(temp)
+
+function adddata(){
+    const kota = localStorage.getItem('kota')
+
+    const table = document.getElementById('data-table');
+
+    fetch(`/api/Samling?kota_kabupaten=${kota}`)
+    .then(response => response.json())
+    .then(data => {
+
+        console.log(kota);
+
+        table.innerHTML = ""
+        
+            for(let i = 0; i < data.length; i++){
+                const html = `
+                    <tr>
+                        <td style="vertical-align : middle;">${[i+1]}</td>
+                        <td >${data[i].lokasi}</td>
+                        <td >${data[i].alamat}</td>
+                        <td style="vertical-align : middle;">${data[i].waktu_buka}</td>
+                        <td style="vertical-align : middle;">${data[i].waktu_tutup}</td>
+                        <td style="vertical-align : middle;">${data[i].hari}</td>
+                    </tr>
+                `;
+                table.innerHTML += html;
+            }
     })
 }
 
-function inserthtml(samling){
-    tbody.innerHTML = '';
 
-    for(let i=0; i < samling.length; i++){
-        const html = `
-        <tr align="center" valign="middle">${samling[i].Lokasi}</tr>
-        <tr align="center" valign="middle">${samling[i].Alamat}</tr>
-        <tr align="center" valign="middle">${samling[i].Waktu_Buka}</tr>
-        <tr align="center" valign="middle">${samling[i].Waktu_Tutup}</tr>
-        <tr align="center" valign="middle">${samling[i].Hari}</tr>
-    `;
-    tbody.innerHTML += html;
-    }
-}
 
+adddata();

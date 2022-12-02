@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from pymongo import MongoClient
 import bson.json_util as json_util
 
@@ -11,9 +11,12 @@ def parse_json(data):
 
 @app.route('/api/Samling', methods=["GET"])
 def get_data():
+
+    kota = request.args.get('kota_kabupaten')
+
     collection = client["BAPENDA"]["Samsat_Keliling"]
     datas = []
-    for data in collection.find({}):
+    for data in collection.find({'kota_kabupaten' : kota}):
         datas.append(data)
     return parse_json(datas)
 

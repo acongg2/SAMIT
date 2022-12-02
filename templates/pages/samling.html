@@ -109,78 +109,29 @@
             <h3>Kota Bandung</h3>
           </div>
           <div class = "table-jadwal-container">
-            
-            <style>
-              table{
-                counter-reset: row-num;
-              }
-              tr{
-                counter-increment: row-num;
-              }
-              tr td:first-child::before{
-                content: counter(row-num);
-                display: inline-block;
-                min-width: 1em;
-                margin-right: 0.5em;
-                text-align: right;
-              }
-            </style>
 
             <table>
               <thead>
                 <tr>
-                  <th>No</th>
-                  <th>Lokasi</th>
-                  <th>Alamat</th>
-                  <th>Waktu Buka</th>
-                  <th>Waktu Tutup</th>
-                  <th>Hari</th>
+                  <th style="color: #FFFF;">No</th>
+                  <th style="color: #FFFF;">Lokasi</th>
+                  <th style="color: #FFFF;">Alamat</th>
+                  <th style="color: #FFFF;">WaktuBuka</th>
+                  <th style="color: #FFFF;">WaktuTutup</th>
+                  <th style="color: #FFFF;">Hari</th>
                 </tr>
               </thead>
-              <tbody id="table-body">
+              <tbody id="data-table">
+
               </tbody>
             </table>
-
-            <script>
-              function getData(){
-                axios.get('/api/samling')
-                  .then(response => {
-
-                    const tableBody = document.getElementById('table-body')
-                    
-                    for (var i=0; i<response.data.length; i++) {
-                      var row = document.createElement('tr')
-                      var no = document.createElement('td')
-                      var lokasi = document.createElement('td')
-                      var alamat = document.createElement('td')
-                      var waktuBuka = document.createElement('td')
-                      var waktuTutup = document.createElement('td')
-                      var hari = document.createElement('td')
-
-                      cell1.innerHTML = response.data[i].no;
-                      cell2.innerHTML = response.data[i].lokasi;
-                      cell3.innerHTML = response.data[i].alamat;
-                      cell4.innerHTML = response.data[i].waktuBuka;
-                      cell5.innerHTML = response.data[i].waktuTutup;
-                      cell6.innerHTML = response.data[i].hari;
-
-                      row.appendChild(no)
-                      row.appendChild(lokasi)
-                      row.appendChild(alamat)
-                      row.appendChild(waktuBuka)
-                      row.appendChild(waktuTutup)
-                      row.appendChild(hari)
-
-                      table.appendChild(row)
-                    }
-                  })
-              }
-            </script>
-
           </div>
         </div>
       </div>
     </div>
   </body>
+
+  <script src="../../static/js/samling.js">
+  </script>
 
 </html>

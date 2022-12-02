@@ -122,7 +122,7 @@
                 <p>Samsat Terdekat</p>
               </div>
               <div class="gambar-terdekat">
-                <img src="..\../static/image\icons\maps.svg" alt="">
+                <img src="../../static/image\icons\maps.svg" alt="">
               </div>
               <div class="selengkapnya-terdekat">
                 <p>Selengkapnya</p>
@@ -166,7 +166,7 @@
         <div class="profile-container">
           <img src="../../image/icons/ic_notification.svg">
           Aulia Fajri
-          <img src="../../image/foto/profile.svg" style="padding: 2px;">   
+          <img src="../../../image/foto/profile.svg" style="padding: 2px;">   
         </div>
 
         <div class="jatuh-tempo-container">
@@ -201,11 +201,11 @@
           <div class="dropdown">
             <button class="dropbtn">Pilih Tempat</button>
             <div class="dropdown-content">
-            <a>Kota Bandung</a>
-            <a>Kabupaten Bandung Barat</a>
-            <a>Kota Cimahi</a>
-            <a>Kota Sumedang</a>
-            <a>Kota Subang</a>
+            <a onclick="getvalue('Kota Bandung')">Kota Bandung</a>
+            <a onclick="getvalue('Kabupaten Bandung Barat')">Kabupaten Bandung Barat</a>
+            <a onclick="getvalue('Kota Cimahi')">Kota Cimahi</a>
+            <a onclick="getvalue('Kota Sumedang')">Kota Sumedang</a>
+            <a onclick="getvalue('Kota Subang')">Kota Subang</a>
             </div>
           </div>
           <button class="button-jadwal" onclick="location.href='/samling'">
@@ -216,5 +216,8 @@
 
     </div>
   </body>
+
+  <script src="../static/js/samling.js">
+  </script>
 
 </html>
