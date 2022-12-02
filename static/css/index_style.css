@@ -351,21 +351,12 @@ button.dropbtn {
     flex-direction: column;
     border-radius: 15px;
     width: 100%;
-    height: 40%;
+    height: 30%;
     padding: 25px;
     background-color: white;
-    margin-bottom: 20px;
-    /* margin-top: 30px;
-    font-weight: bold;
-    align-items: center; */
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
-
-/* .jumlah-kendaraan {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 120px;
-} */
 
 .kendaraan {
     display: flex;
@@ -373,54 +364,83 @@ button.dropbtn {
     border-radius: 15px;
     width: 100%;
     height: 90%;
-    background-color: red;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .gambar-kendaraan {
-    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
     height: 100%;
-    background-color: teal;
 }
 
-.detail {
-    font-size: 15px;
-    background-color: purple;
+.gambar-kendaraan img {
+    height: 80%
+}
+
+.detail1 {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 50%;
+    height: 100%;
+}
+
+.detail1 table {
+    border-spacing: 0 15px ;
+}
+
+.detail2 table {
+    border-spacing: 0 15px ;
+}
+
+.detail2 {
+    padding-top: 29px;
+    padding-left: 40px;
+    font-size: 14px;
+    width: 40%;
+    height: 100%;
+}
+
+.bold {
+    font-weight: 600;
+}
+.detail1 .th1 {
+    width: 50%;
+}
+.detail1 .th2 {
+    width: 10%;
+}
+.detail1 .th3 {
+    width: 50%;
+}
+
+.detail2 .th1 {
     width: 55%;
-    height: 100%;
+}
+.detail2 .th2 {
+    width: 10%;
+}
+.detail2 .th3 {
+    width: 50%;
 }
 
-ul {
-    list-style: none;
-    display: table;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-.detai li {
-    display: table-row;
-  }
-  
-.detail b {
-    display: table-cell;
-    padding-right: 1em;
-  }
-
+.jumlah-kendaraan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
 .informasi-dashboard {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 45%;
+    height: 32.5%;
 }
 
-.jumlah-kendaraan {
-    width: 100%;
-    height: 10%;
-    background-color: brown;
-}
-
-.terdekat {
+.terdekat-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -439,7 +459,9 @@ ul {
 }
 
 .gambar-terdekat {
-    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
 }
 
 .gambar-terdekat img {
@@ -449,14 +471,13 @@ ul {
 }
 
 .selengkapnya-terdekat {
+    padding-top: 20px;
     text-align: right;
-    text-align: bottom;
     font-size: smaller;
-    margin-top: 40px;
     color: #416bff
 }
 
-.berita {
+.berita-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -473,13 +494,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-}
-
-.judul-berita p {
-    text-align: center;
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .isi-berita {
@@ -492,7 +509,7 @@ ul {
     text-align: left;
     text-align: justify;
     font-size: 12px;
-    line-height: 100 px;
+    line-height: 20px;
     color: #616161;
 }
 
@@ -511,11 +528,11 @@ ul {
 .selengkapnya-berita {
     text-align: right;
     font-size: smaller;
-    margin-top: 45px;
+    margin-top: 10px;
     color: #416bff
 }
 
-.riwayat {
+.riwayat-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -529,34 +546,42 @@ ul {
 .judul-riwayat {
     text-align: center;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .gambar-riwayat {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .gambar-riwayat img {
-    width: 80%;
-    height: 50%;
+    width: 50%;
 }
 
 .isi-riwayat {
-    text-align: center;
-    font-size: smaller;
-}
-
-.banner-riwayat {
-    height: 100%;
+    background-color: #23CE78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300%;
     width: 100%;
-    background-color: black
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 .selengkapnya-riwayat {
     text-align: right;
     font-size: smaller;
-    margin-top: 22px;
+    margin-top: 10px;
     color: #416bff
 }
 
+.banner-iklan {
+    margin-top: 10px;
+}
