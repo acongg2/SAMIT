@@ -164,16 +164,52 @@
 
       <div class = "right-cont">
         <div class="profile-container">
-          <img src="../static/../static/image/icons/ic_notification.svg">
+          <img src="image/icons/ic_notification.svg">
           Aulia Fajri
-          <img src="../static/../static/image/foto/profile.svg" style="padding: 2px;">   
+          <img src="image/foto/profile.svg" style="padding: 2px;">   
         </div>
-        
-        <div class="jatuh-tempo-container">
-          jatuh
-        </div>
-        <div class="layanan-container">
 
+        <div class="jatuh-tempo-container">
+          <img src="image/icons/ic_warning.svg">
+          <p class="plat-nomor">D 1893 RAY</p> 
+          <div class="tanggal-jatuh-tempo">
+            Jatuh tempo pada : <strong>30 November 2022</strong>
+          </div> 
+          <button class="button-bayar" onclick="alert('Bayar Sekarang!')">
+            Bayar sekarang
+          </button>
+        </div>
+
+        <div class="layanan-container">
+          <p class="layanan">Layanan :</p>
+          <div class="dropdown">
+            <button class="dropbtn">Pilih Layanan</button>
+            <div class="dropdown-content">
+            <a>Samsat Keliling</a>
+            <a>Samsat J'Bret</a>
+            <a>Samsat Masuk Desa</a>
+            <a>Samsat Outlet</a>
+            <a>Samsat Gendrong</a>
+            <a>Samsat Drive Thru</a>
+            <a>Samsat Corner</a>
+            <a>Samsat KCP Bank BJB</a>
+            <a>Samsat Online 3 Provinsi</a>  
+            </div>
+          </div>
+          <p class="tempat">Tempat :</p>
+          <div class="dropdown">
+            <button class="dropbtn">Pilih Tempat</button>
+            <div class="dropdown-content">
+            <a>Kota Bandung</a>
+            <a>Kabupaten Bandung Barat</a>
+            <a>Kota Cimahi</a>
+            <a>Kota Sumedang</a>
+            <a>Kota Subang</a>
+            </div>
+          </div>
+          <button class="button-jadwal" onclick="alert('Cari Jadwal')">
+            Cari Jadwal
+          </button>
         </div>
       </div>
 
