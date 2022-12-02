@@ -155,6 +155,7 @@ body {
     border-radius: 10px;
     background-color: white;
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    cursor: pointer;
 }
 
 .back-button img {
@@ -211,5 +212,45 @@ body {
 }
 
 .table-jadwal-container {
-    padding: 1vw;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);  
+    background-color: rgba(240, 221, 52, 0);
+    
+}
+
+.table-jadwal-container thead th {
+    position: sticky;
+    top: 0;
+    background-color: #249165;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.5)
+}
+
+th,
+td {
+    vertical-align: middle;
+    padding: 8px 16px;
+}
+th {
+    background: rgb(22, 150, 229);
+
+}
+#table tr td{
+    text-align: center;
+    height : 60px;
+}
+
+thead tr th {
+    width: 160px;
+}
+
+.label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
 }

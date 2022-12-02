@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="../../static/css/samling_style.css" />
         <title>SamIT</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -88,7 +89,7 @@
       <div class = "right-cont">
         <div class = "right-header-cont">
           <div class = "back-button">
-            <img src = "../../static/image/icons/back.svg">
+            <img src = "../../static/image/icons/back.svg" onclick="location.href='/'">
           </div>
           <div class = "search-bar">
             <div class = "search-icon">
@@ -108,11 +109,29 @@
             <h3>Kota Bandung</h3>
           </div>
           <div class = "table-jadwal-container">
-            ini jadwal
+
+            <table>
+              <thead>
+                <tr>
+                  <th style="color: #FFFF;">No</th>
+                  <th style="color: #FFFF;">Lokasi</th>
+                  <th style="color: #FFFF;">Alamat</th>
+                  <th style="color: #FFFF;">WaktuBuka</th>
+                  <th style="color: #FFFF;">WaktuTutup</th>
+                  <th style="color: #FFFF;">Hari</th>
+                </tr>
+              </thead>
+              <tbody id="data-table">
+
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </body>
+
+  <script src="../../static/js/samling.js">
+  </script>
 
 </html>

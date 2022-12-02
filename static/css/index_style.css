@@ -94,7 +94,7 @@ body {
     width: 20%;
     height: 100vh;
     padding: 2vh;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0);
 }
 
 .info {
@@ -146,9 +146,8 @@ body {
 .profile-container {
     font-size: 15px;
     font-weight: bold;
-    margin-top: 5hv;
     width: 100%;
-    height: 100px;
+    height: 70px;
     border-radius: 16px;
     box-shadow: inset;
     display: flex;
@@ -160,10 +159,10 @@ body {
 }
 
 .jatuh-tempo-container {
-    margin-top: auto;
+    margin-top: 2vh;
     width: 100%;
-    height: 200px;
-    background:  #f8f8f8;
+    height: 275px;
+    background:  #ffffff;
     border-radius: 16px;
     box-shadow: inset;
     display: flex;
@@ -171,24 +170,127 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 24px 12px;
+    padding: 24px 15px;
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
+.plat-nomor {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.tanggal-jatuh-tempo {
+    width: 80%;
+    height: 60px;
+    background:  #a50909;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff; 
+    text-align: center;
+    padding: 9px 20px;
+}
+
+.button-bayar {
+    width: 50%;
+    height: 40px;
+    background: #366CF8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    font-size: 11px; 
+    margin-top: 2vh;
+}
+
 .layanan-container {
-    margin-top: auto;
+    margin-top: 2vh;
     width: 100%;
-    height: 300px;
-    background:  #f8f8f8;
+    height: 350px;
+    background:  #ffffff;
     border-radius: 16px;
     box-shadow: inset;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: first baseline;
     gap: 12px;
-    padding: 24px 12px;
+    padding: 24px 25px;
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+button.dropbtn {
+    border:1 px solid #366CF8;
+}
+
+.layanan {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropbtn {
+    background-color: #f8f8f8;
+    color: #c0c0c0;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    border:#c0c0c0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 225px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c0c0c0;
+    color: white;
+}
+
+.tempat {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-jadwal {
+    width: 50%;
+    height: 40px;
+    background: #366CF8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    font-size: 11px; 
+    cursor: pointer;
 }
 
 .mid-header {

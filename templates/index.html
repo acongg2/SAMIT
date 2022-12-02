@@ -15,7 +15,7 @@
     <div class = "web-container">
       <div class = "left-cont">
         <div class = "logo">
-          <a href = "{{ url_for('samling') }}"><img src = "../static/image/logosamit.svg" ></a>
+          <img src = "../static/image/logosamit.svg">
         </div>
         <div class = "list-menu-container">
           <div class = "menu">
@@ -77,7 +77,7 @@
         </div>
         <div class="info">
           <div class="info-logo">
-            <img src="../static/image/icons/ic_green_shield.svg"> 
+            <img src="../static/image/icons/ic_green_shield.svg" alt=""> 
           </div>
           <p class="info-text text-bold">Awasi pajak kendaraanmu!</p>
           <p class="info-text">Bayar pajak tidak perlu ribet ! Cukup klik dan beres</p>
@@ -86,34 +86,34 @@
       </div>
       <div class = "mid-cont">
           <div class = "mid-header">
-            <div class = "hello-anda">
+            <div class="hello-anda">
               <h1>Hello, Aulia!</h1>
               <p>Jalan Ganesha No.10, Bandung</p>
             </div>
             <div class = "pencarian">
-              <img src="../../static/image/icons/search.svg" alt="">
-              <input type="text" placeholder = "Search">
+              <img src="../../static/image\icons\search.svg" alt="">
+              <input type="text" placeholder="search">
             </div>
           </div>
           <div class = "info-kendaraan">
             <div class = "kendaraan">
               <div class = "gambar-kendaraan">
-                <img src="../../static/image/icons/motorcycle 1.svg" alt="">
+                <img src="../../static/image\icons\motorcycle 1.svg" alt="">
               </div>
-              <div class="detail">
-                <ul>
-                  <li>Plat Nomor       : D 1893 RAY</li>
-                  <li>Jenis Kendaraan  : Motor Sport</li>
-                  <li>Warna Kendaraan  : Merah Hitam</li>
-                  <li>Nomor Rangka     : 1HGBH41JXMNxxxxx</li>
-                  <li>Nomor Mesin      : JF21E</li>
-                  <li>Jumlah Biaya     : Rp 358.000</li>
-                  <li>Diskon Pajak     : ARp 35.800</li>
-                </ul>
+              <div class="detail1">
+                <p>Plat Nomor       : D 1893 ray</p>
+                <p>Jenis Kendaraan  : Motor Sport</p>
+                <p>Warna Kendaraan  : Merah Hitam</p>
+                <p>Nomor Rangka     : 1HGBH41JXMNxxxxx</p>
+              </div>
+              <div class="detail2">
+                <p>Nomor Mesin      : JF21E</p>
+                <p>Jumlah Biaya     : Rp 358.000</p>
+                <p>Diskon Pajak     : Rp 35.800</p>
               </div>
             </div>
             <div class = "jumlah-kendaraan">
-              <!-- <img src="../../static/image/icons/titik4.svg" alt=""> -->
+              <img src="../../static/image\icons\titik4.svg" alt="">
             </div>
           </div>
           <div class = "informasi-dashboard">
@@ -122,7 +122,7 @@
                 <p>Samsat Terdekat</p>
               </div>
               <div class="gambar-terdekat">
-                <img src="../../static/image/icons/maps.svg" alt="">
+                <img src="../../static/image\icons\maps.svg" alt="">
               </div>
               <div class="selengkapnya-terdekat">
                 <p>Selengkapnya</p>
@@ -130,14 +130,13 @@
             </div>
             <div class="berita">
               <div class="judul-berita">
-                <p>Bapenda Jabar Galang Donasi Untuk Gempa Cianjur</p>
+                <p>Berita Harian Terkini</p>
               </div>
               <div class="gambar-berita">
-                <img src="../../static/image/icons/berita.svg" alt="">
+                <img src="../../static/image\icons\berita.svg" alt="">
               </div>
               <div class="isi-berita">
-                <p>Kepala Badan Pendapatan Daerah Provinsi Jawa Barat (Bapenda Jabar), Dedi Taufik 
-                   mengajak seluruh pegawai Bapenda serta pegawai Samsat […]</p>
+                <p>Bapenda Jabar Galang Donasi Untuk Gempa Cianjur</p>
               </div>
               <div class="selengkapnya-berita">
                 <p>Selengkapnya</p>
@@ -148,37 +147,77 @@
                 <p>Riwayat Pembayaran</p>
               </div>
               <div class="gambar-riwayat">
-                <img src="../../static/image/icons/motorcycle 1.svg" alt="">
+                <img src="../../static/image\icons\motorcycle 1.svg" alt="">
               </div>
               <div class="isi-riwayat">
                 <p>Pajak Motor</p>
-                <div class="banner-riwayat">
-                  30 November 2021
-                </div>
               </div>
               <div class="selengkapnya-riwayat">
                 <p>Selengkapnya</p>
               </div>
             </div>
           </div>
+          <div class = "banner-iklan">
+            <img src="../../static/image\icons\iklan.svg" alt="">
+          </div>
       </div>
 
       <div class = "right-cont">
         <div class="profile-container">
-          <img src="../static/../static/image/icons/ic_notification.svg">
+          <img src="../../image/icons/ic_notification.svg">
           Aulia Fajri
-          <img src="../static/../static/image/foto/profile.svg" style="padding: 2px;">   
+          <img src="../../../image/foto/profile.svg" style="padding: 2px;">   
         </div>
-        
-        <div class="jatuh-tempo-container">
-          jatuh
-        </div>
-        <div class="layanan-container">
 
+        <div class="jatuh-tempo-container">
+          <img src="../../image/icons/ic_warning.svg">
+          <p class="plat-nomor">D 1893 RAY</p> 
+          <div class="tanggal-jatuh-tempo">
+            Jatuh tempo pada : <strong>30 November 2022</strong>
+          </div> 
+          <button class="button-bayar" onclick="alert('Bayar Sekarang!')">
+            Bayar sekarang
+          </button>
+        </div>
+
+        <div class="layanan-container">
+          <p class="layanan">Layanan :</p>
+          <div class="dropdown">
+            <button class="dropbtn">Pilih Layanan</button>
+            <div class="dropdown-content">
+              <a>Samsat Keliling</a>
+              <a>Samsat J'Bret</a>
+              <a>Samsat Masuk Desa</a>
+              <a>Samsat Outlet</a>
+              <a>Samsat Gendrong</a>
+              <a>Samsat Drive Thru</a>
+              <a>Samsat Corner</a>
+              <a>Samsat KCP Bank BJB</a>
+              <a>Samsat Online 3 Provinsi</a>  
+            </div>
+          
+          </div>
+          <p class="tempat">Tempat :</p>
+          <div class="dropdown">
+            <button class="dropbtn">Pilih Tempat</button>
+            <div class="dropdown-content">
+            <a onclick="getvalue('Kota Bandung')">Kota Bandung</a>
+            <a onclick="getvalue('Kabupaten Bandung Barat')">Kabupaten Bandung Barat</a>
+            <a onclick="getvalue('Kota Cimahi')">Kota Cimahi</a>
+            <a onclick="getvalue('Kota Sumedang')">Kota Sumedang</a>
+            <a onclick="getvalue('Kota Subang')">Kota Subang</a>
+            </div>
+          </div>
+          <button class="button-jadwal" onclick="location.href='/samling'">
+            Cari Jadwal
+          </button>
         </div>
       </div>
 
     </div>
   </body>
+
+  <script src="../static/js/samling.js">
+  </script>
 
 </html>
