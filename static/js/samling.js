@@ -15,8 +15,8 @@ function inserthtml(samling){
 
     for(let i=0; i < samling.length; i++){
         const html = `
-        <tr>${samling[i].Lokasi}</tr>
-        <tr>${samling[i].Alamat}</tr>
+        <tr align="center" valign="middle">${samling[i].Lokasi}</tr>
+        <tr align="center" valign="middle">${samling[i].Alamat}</tr>
         <tr align="center" valign="middle">${samling[i].Waktu_Buka}</tr>
         <tr align="center" valign="middle">${samling[i].Waktu_Tutup}</tr>
         <tr align="center" valign="middle">${samling[i].Hari}</tr>
@@ -24,3 +24,4 @@ function inserthtml(samling){
     tbody.innerHTML += html;
     }
 }
+

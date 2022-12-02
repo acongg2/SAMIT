@@ -237,14 +237,14 @@ button.dropbtn {
     cursor: pointer;
     
 }
-  
+
 .dropdown {
     position: relative;
     display: inline-block;
     min-width: 200px;
     border:#c0c0c0;
 }
-  
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -253,23 +253,24 @@ button.dropbtn {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-  
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
-  
+
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
-  
+
 .dropdown:hover .dropdown-content {
     display: block;
     
 }
-  
+
 .dropdown:hover .dropbtn {
     background-color: #c0c0c0;
     color: white;
@@ -289,6 +290,7 @@ button.dropbtn {
     color: #ffffff;
     border: none;
     font-size: 11px; 
+    cursor: pointer;
 }
 
 .mid-header {
