@@ -7,8 +7,19 @@ function getvalue(i){
 }
 
 let search = false;
-
 console.log(temp)
+
+function addheader3(){
+    const head = document.getElementById('header3')
+    const judulhead = localStorage.getItem('kota')
+
+    head.innerHTML = ""
+    const html = `
+    <h1><b>Samsat Keliling</b></h1>
+    <h3>${judulhead}</h3>
+    `;
+    head.innerHTML += html;
+}
 
 function adddata(){
     const kota = localStorage.getItem('kota')
@@ -22,7 +33,6 @@ function adddata(){
         console.log(kota);
 
         table.innerHTML = ""
-        
             for(let i = 0; i < data.length; i++){
                 const html = `
                     <tr>
@@ -42,3 +52,4 @@ function adddata(){
 
 
 adddata();
+addheader3();
